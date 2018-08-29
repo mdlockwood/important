@@ -24,7 +24,13 @@ pipeline {
     }
     stage('Fail') {
       steps {
-        sh 'exit 1'
+        sh 'exit 0'
+      }
+    }
+    stage('End') {
+      steps {
+        echo 'Hello End'
+        sleep 10
       }
     }
   }
