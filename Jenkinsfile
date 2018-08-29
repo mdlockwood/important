@@ -24,7 +24,7 @@ pipeline {
     }
     stage('Fail') {
       steps {
-        sh 'exit 0'
+        sh 'exit 1'
       }
     }
     stage('End') {
