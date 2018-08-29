@@ -22,5 +22,10 @@ pipeline {
         sleep 10
       }
     }
+    stage('Fail') {
+      steps {
+        sh 'exit 1'
+      }
+    }
   }
 }
